@@ -21,7 +21,7 @@ schema.
 ### Event Organiser
 Organisers create and manage events (e.g. marathons, cycle tours, park runs), define
 categories within each event (e.g. distance, age group), and capture or manage
-participant results once an event has taken place.
+participant results after an event.
 
 ### Participant
 Participants browse upcoming events, enter events of their choice, view their
@@ -63,7 +63,7 @@ exists and contains the required planning files.
 An unlisted YouTube video walking through the planning documents, ERD decisions,
 endpoint plan choices, and a live run of the SQL script in SSMS:
 
-**Video Link:** [Insert YouTube link here]
+**Video Link:** [https://youtu.be/e0HiRT_Cxs0](https://youtu.be/e0HiRT_Cxs0)
 
 ## How to Run the SQL Script
 
