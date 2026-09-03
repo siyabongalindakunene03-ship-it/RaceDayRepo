@@ -44,7 +44,7 @@ README.md
 
 - [Entity Relationship Diagram](./docs/SectionA_ERD.pdf)
 - [Endpoint Plan](./docs/SectionB_RaceDay_Endpoint-Plan.pdf )
-- [SQL Script](./docs/SectionCRaceDay_SQL_Execution.pdf)
+- [SQL Script](./docs/SectionC_schema.sql)
 
 ## CI/CD
 
