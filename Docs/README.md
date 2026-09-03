@@ -33,9 +33,9 @@ information to prepare for race day.
 ```
 /docs
   ├── README.md 
-  ├── ERD.png                  # Entity Relationship Diagram
-  ├── endpoint-plan.md         # Planned API endpoints
-  └── schema.sql                # Database creation script
+  ├── SectionA_ERD.pdf                  # Entity Relationship Diagram
+  ├── SectionB_RaceDay_Endpoint-Plan.pdf         # Planned API endpoints
+  └── SectionCRaceDay_SQL_Execution.pdf                # Database creation script
 .github/workflows/validate.yml # CI/CD structure validation
 README.md
 ```
