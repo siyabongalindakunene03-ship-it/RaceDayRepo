@@ -15,27 +15,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check docs folder and required files
+      - name: Check Docs folder and required files
         run: |
           echo "Checking RaceDay planning documents..."
 
-          if [ ! -d "docs" ]; then
-            echo "ERROR: docs folder does not exist."
+          if [ ! -d "Docs" ]; then
+            echo "ERROR: Docs folder does not exist."
             exit 1
           fi
 
           required_files=(
-            "Section A_ERD.pdf"
-            "Section B_RaceDay_Endpoint_Plan.pdf"
-            "Section C_RaceDay_SQL_Execution.sql"
+            "SectionA_ERD.pdf"
+            "SectionB_RaceDay_Endpoint_Plan.pdf"
+            "SectionC_RaceDay_SQL_Execution.pdf"
+            "SectionC_schema.sql"
           )
 
           for file in "${required_files[@]}"; do
-            if [ ! -f "docs/$file" ]; then
-              echo "ERROR: Missing docs/$file"
+            if [ ! -f "Docs/$file" ]; then
+              echo "ERROR: Missing Docs/$file"
               exit 1
             else
-              echo "Found: docs/$file"
+              echo "Found: Docs/$file"
             fi
           done
 
