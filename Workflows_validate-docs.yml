@@ -1,1 +1,39 @@
+name: Validate RaceDay Planning Documents
 
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check docs folder and required files
+        run: |
+          echo "Checking RaceDay planning documents..."
+
+          if [ ! -d "docs" ]; then
+            echo "ERROR: docs folder does not exist."
+            exit 1
+          fi
+
+          required_files=(
+            "Section A_ERD.pdf"
+            "Section B_RaceDay_Endpoint_Plan.pdf"
+            "Section C_RaceDay_SQL_Execution.sql"
+          )
+
+          for file in "${required_files[@]}"; do
+            if [ ! -f "docs/$file" ]; then
+              echo "ERROR: Missing docs/$file"
+              exit 1
+            else
+              echo "Found: docs/$file"
+            fi
+          done
+
+          echo "All required RaceDay planning documents are present."
