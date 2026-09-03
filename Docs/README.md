@@ -12,7 +12,7 @@ Participants can browse upcoming events, enter events, track their personal
 performance history, and prepare for race day using live weather and route
 information.
 
-This repository contains the planning phase of the project: the entity relationship
+This repository contains the planning phase of the project: the entity-relationship
 diagram (ERD), the API endpoint plan, and the SQL script used to build the database
 schema.
 
@@ -53,9 +53,10 @@ exists and contains the required planning files.
 
 **Successful build:**
 
-![CI/CD Green Build](./docs/ci-success-screenshot.png)
+<img width="1920" height="1061" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/b27ffb03-0f79-4dad-8162-14b4d46bbc1e" />
 
-<!-- Replace the image above with your actual screenshot once the workflow passes -->
+
+
 
 ## Video Walkthrough
 
