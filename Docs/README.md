@@ -32,6 +32,7 @@ information to prepare for race day.
 
 ```
 /docs
+  ├── README.md 
   ├── ERD.png                  # Entity Relationship Diagram
   ├── endpoint-plan.md         # Planned API endpoints
   └── schema.sql                # Database creation script
